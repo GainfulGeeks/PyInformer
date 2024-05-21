@@ -9,4 +9,5 @@ class Worker(models.Model):
     
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     type = models.CharField(max_length=4, choices=WorkerTypeChoices,default=WorkerTypeChoices.EMPLOYEE)
+    ssn = models.CharField(max_length=10,null=True,blank=True,verbose_name=_("Social Security Number"))
 
