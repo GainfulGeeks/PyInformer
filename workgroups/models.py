@@ -14,3 +14,5 @@ class Membership(models.Model):
     workgroup = models.ForeignKey(Workgroup, on_delete=models.CASCADE) # TODO: exclude self
     is_supervisor = models.BooleanField(default=False)
     date_joined = models.DateField()
+
+#TODO: add roles to workgroups
